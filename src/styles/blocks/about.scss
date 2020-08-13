@@ -1,0 +1,19 @@
+.about {
+  &__content {
+    display: flex;
+  }
+
+  &__text-wrap {
+    padding: 0 65px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      padding-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.services {
+  background: $color-third;
+
+  .section__title {
+    &::before {
+      background: #ffffff;
+    }
+  }
+
+  &__text {
+    margin-bottom: 47px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__text:last-child {
+    margin-bottom: 0;
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 118px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: 20px;
+
+      width: 43px;
+      height: 10px;
+
+      background: url(../assets/img/serices-arrow.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .item {
+    &__title {
+      margin-bottom: 33px;
+
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 42px;
+      color: $color-second;
+    }
+
+    &__item {
+      position: relative;
+
+      padding-bottom: 15px;
+      padding-left: 21px;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 20px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+
+        width: 6px;
+        height: 6px;
+
+        background: #ffffff;
+      }
+    }
+  }
+}

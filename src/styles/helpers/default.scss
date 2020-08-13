@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @media (max-width: 1919.98px) {
+    // max-width: 1140px;
+  }
+
+  @media (max-width: 1199.98px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 991.98px) {
+    max-width: 720px;
+  }
+
+  @media (max-width: 767.98px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 0 10px;
+  }
+}
+
+.section {
+  &__inner {
+    padding: 100px 0;
+
+    @media (max-width: 767.98px) {
+      padding: 55px 0;
+    }
+
+    @media (max-width: 575.98px) {
+      // padding: 55px 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    margin-bottom: 110px;
+
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 100px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+
+      width: 100px;
+      height: 6px;
+
+      background: $color-third;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 40px;
+
+      // font-size: 37px;
+    }
+  }
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+
+  font-family: 'Sofia-Pro', 'Times New Roman', Arial, sans-serif;
+  color: $color-primary;
+
+  &.overflow-hidden {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+  }
+}
+
+.btn-wrap {
+  position: relative;
+}
+
+.btn-img {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+
+  transform: translateY(-50%);
+}
+
+.btn {
+  display: block;
+  padding: 15px 65px 15px 40px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-second;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+
+  background-color: $color-third;
+  border: none;
+  @media (max-width: 767.98px) {
+    padding: 15px 45px;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 12px 25px;
+  }
+
+  &:hover {
+    // box-shadow: 0 0 27px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    // box-shadow: 0 0 27px 8px rgba(0, 0, 0, 0.2);
+  }
+}

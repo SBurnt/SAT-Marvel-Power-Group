@@ -1,0 +1,11 @@
+@import '~normalize.css';
+@import './helpers/reset';
+@import './fonts/fonts';
+
+@import './helpers/variables';
+@import './helpers/default';
+@import './helpers/mixins';
+
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/footer';
